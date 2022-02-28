@@ -99,7 +99,7 @@
   object-position: right top;
 }
 
-#background-video-container:before {
+#gradient-bg {
   content:"";
   position: absolute;
   top:0;
@@ -156,7 +156,7 @@
     object-position: 88%;
   }
 
-  #background-video-container:before {
+  #gradient-bg {
     background:linear-gradient(
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.93) 30%,
@@ -208,7 +208,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
-  #background-video-container:before {
+  #gradient-bg {
     background:linear-gradient(
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.8) 30%,
