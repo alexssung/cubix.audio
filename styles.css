@@ -6,6 +6,7 @@
 .play-link {
   border-radius: 5rem !important;
   width: 20rem;
+  opacity: 75%;
 }
 
 .play-text {
@@ -21,4 +22,60 @@
 .main {
   height: 75vh;
   font-family: 'MetropolisLight', 'Arial';
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  object-position: right top;
+}
+
+#background-video-container:before {
+  content:"";
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index:-1;
+  background:linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0.8) 40%,
+    rgba(255, 255, 255, 0.8) 60%,
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+
+@media (max-width: 767px) {
+  #background-video {
+    object-position: 88%;
+  }
+
+  #background-video-container:before {
+    background:linear-gradient(
+      rgba(255, 255, 255, 0) 10%,
+      rgba(255, 255, 255, 0.8) 30%,
+      rgba(255, 255, 255, 1.0) 50%,
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 0) 90%
+    );
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1399px) {
+    #background-video-container:before {
+    background:linear-gradient(
+      rgba(255, 255, 255, 0) 10%,
+      rgba(255, 255, 255, 1) 45%,
+      rgba(255, 255, 255, 0) 90%
+    );
+  }
+
 }
