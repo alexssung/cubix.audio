@@ -9,6 +9,7 @@
 }
 
 #loading {
+  pointer-events: none;
   background-color: rgb(240,240,240);
   width: 100vw;
   height: 100vh;
@@ -85,7 +86,6 @@
 .social-icon {
   padding: 1rem;
   text-decoration: none;
-  color: grey;
 }
 
 #background-video {
@@ -188,7 +188,7 @@
   .social-icon {
     padding: 1rem;
     text-decoration: none;
-    color: white;
+    color: white !important;
   }
 }
 
@@ -229,6 +229,6 @@
   .social-icon {
     padding: 1rem;
     text-decoration: none;
-    color: white;
+    color: white !important;
   }
 }
