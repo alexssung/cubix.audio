@@ -3,10 +3,19 @@
   src: url('Metropolis-Light.otf');
 }
 
+@font-face {
+  font-family: 'AvenirNextUltraLight';
+  src: url('avenir-next-ultra-light.ttf');
+}
+
+.header {
+  font-family: 'AvenirNextUltraLight';
+  font-size: 1.8rem;
+}
+
 .play-link {
   border-radius: 5rem !important;
   width: 20rem;
-  opacity: 75%;
 }
 
 .play-text {
@@ -109,51 +118,45 @@
 
   #background-video-container:before {
     background:linear-gradient(
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 1.0) 50%,
-      rgba(255, 255, 255, 0.8) 70%,
-      rgba(255, 255, 255, 0) 90%
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.93) 30%,
+      rgba(255, 255, 255, 0.93) 60%,
+      rgba(255, 255, 255, 0)
     );
     background:-moz-linear-gradient(
       to right,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 1.0) 50%,
-      rgba(255, 255, 255, 0.8) 70%,
-      rgba(255, 255, 255, 0) 90%
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9) 30%,
+      rgba(255, 255, 255, 0.9) 60%,
+      rgba(255, 255, 255, 0)
     );
     background:-webkit-gradient(
       to right,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 1.0) 50%,
-      rgba(255, 255, 255, 0.8) 70%,
-      rgba(255, 255, 255, 0) 90%
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9) 30%,
+      rgba(255, 255, 255, 0.9) 60%,
+      rgba(255, 255, 255, 0)
     );
     background:-webkit-linear-gradient(
       to right,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 1.0) 50%,
-      rgba(255, 255, 255, 0.8) 70%,
-      rgba(255, 255, 255, 0) 90%
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9) 30%,
+      rgba(255, 255, 255, 0.9) 60%,
+      rgba(255, 255, 255, 0)
     );
     background:-o-linear-gradient(
       to right,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 1.0) 50%,
-      rgba(255, 255, 255, 0.8) 70%,
-      rgba(255, 255, 255, 0) 90%
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9) 30%,
+      rgba(255, 255, 255, 0.9) 60%,
+      rgba(255, 255, 255, 0)
     );
     background:-ms-linear-gradient(
       to right,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 1.0) 50%,
-      rgba(255, 255, 255, 0.8) 70%,
-      rgba(255, 255, 255, 0) 90%
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9) 30%,
+      rgba(255, 255, 255, 0.9) 60%,
+      rgba(255, 255, 255, 0)
     );
   }
 
@@ -165,11 +168,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
-    #background-video-container:before {
+  #background-video-container:before {
     background:linear-gradient(
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 1) 45%,
-      rgba(255, 255, 255, 0) 90%
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.8) 30%,
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 0)
     );
     background:-moz-linear-gradient(
       to right,
