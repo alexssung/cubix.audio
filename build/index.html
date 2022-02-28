@@ -26,13 +26,13 @@
   <body>
     <div id="loading"></div>
     <div id="gradient-bg"></div>
+    <div id="background-video-container">
+      <video id="background-video" poster="bg-poster.jpg" playsinline autoplay loop muted>
+        <source src="bg.mp4" type="video/mp4">
+        <source src="bg.webm" type="video/webm">
+      </video>
+    </div>
     <div id="main-container" style="display:none">
-      <div id="background-video-container">
-        <video id="background-video" poster="bg-poster.jpg" playsinline autoplay loop muted>
-          <source src="bg.mp4" type="video/mp4">
-          <source src="bg.webm" type="video/webm">
-        </video>
-      </div>
       <div class="main d-flex align-items-center">
         <div class="container-fluid text-center">
           <div class="mt-5 mb-5">
