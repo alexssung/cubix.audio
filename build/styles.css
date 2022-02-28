@@ -24,6 +24,21 @@
   font-family: 'MetropolisLight', 'Arial';
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 1rem;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+}
+
+.social-icon {
+  padding: 1rem;
+  text-decoration: none;
+  color: grey;
+}
+
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -141,6 +156,12 @@
       rgba(255, 255, 255, 0) 90%
     );
   }
+
+  .social-icon {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
@@ -180,5 +201,11 @@
       rgba(255, 255, 255, 1) 45%,
       rgba(255, 255, 255, 0) 90%
     );
+  }
+
+  .social-icon {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
   }
 }
