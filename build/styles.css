@@ -8,6 +8,34 @@
   src: url('avenir-next-ultra-light.ttf');
 }
 
+#loading {
+  background-color: rgb(240,240,240);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.fade-out {
+  opacity: 0;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.6s;
+}
+
+@keyframes fadeInOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .header {
   font-family: 'AvenirNextUltraLight';
   font-size: 1.8rem;
