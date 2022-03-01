@@ -154,6 +154,10 @@
 }
 
 @media (max-width: 767px) {
+  .main {
+    height: 75vh;
+  }
+
   #background-video {
     object-position: 89.4%;
   }
