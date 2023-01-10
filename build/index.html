@@ -49,7 +49,7 @@
     <div id="gradient-bg"></div>
     <div id="background"></div>
     <div id="background-video-container">
-      <video id="background-video" poster="bg-poster.jpg" playsinline autoplay loop muted>
+      <video id="background-video" preload="none" poster="bg-poster.jpg" playsinline loop muted>
         <source src="bg.mp4" type="video/mp4">
         <source src="bg.webm" type="video/webm">
       </video>
@@ -57,9 +57,9 @@
     <div id="main-container" style="display:none">
       <div class="main d-flex align-items-center">
         <div class="container-fluid text-center">
-          <!-- <div class="mt-5 mb-5">
-            <h3 class="header">electronic music</h3>
-          </div> -->
+          <div class="mt-5 mb-5">
+            <h3 class="header">3 AM</h3>
+          </div>
           <div>
             <a class="btn btn-outline-secondary py-3 px-4 play-link mt-3" href="https://open.spotify.com/artist/3vNcEbGxXcZHYthv53q38k" target="_blank">
               <div class="d-flex flex-row">
@@ -67,7 +67,7 @@
                   <i class="fab fa-spotify" data-fa-transform="grow-2 down-1"></i>
                 </div>
                 <div class="play-text">
-                  <span>Spotify</span>
+                  <span>Play on Spotify</span>
                 </div>
               </div>
             </a>
@@ -79,7 +79,7 @@
                   <i class="fab fa-soundcloud" data-fa-transform="grow-3"></i>
                 </div>
                 <div class="play-text">
-                  <span>Soundcloud</span>
+                  <span>Play on Soundcloud</span>
                 </div>
               </div>
             </a>
@@ -91,7 +91,7 @@
                   <i class="fab fa-apple" data-fa-transform="grow-4 up-0.5"></i>
                 </div>
                 <div class="play-text">
-                  <span>Apple Music</span>
+                  <span>Play on Apple Music</span>
                 </div>
               </div>
             </a>
@@ -118,10 +118,18 @@
     </div>
 
     <script>
+      window.onload = addAutoplay()
+
+      function addAutoplay() {
+        if ( window.innerWidth > 767 ) {
+          document.getElementById("background-video").setAttribute("autoplay","")
+        }
+      }
+
       document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById('loading').classList.add('fade-out')
         document.getElementById('main-container').style.display = 'block'
-      });
+      })
     </script>
   </body>
 </html>
