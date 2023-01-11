@@ -176,10 +176,25 @@ html {
   #gradient-bg {
     background:linear-gradient(
       rgba(255, 255, 255, 0.90) 60%,
-      rgba(255, 255, 255, 0.60) 90%,
-      rgba(255, 255, 255, 0.00) 100%
+      rgba(255, 255, 255, 0.80) 80%
     );
     background:-moz-linear-gradient(
+      rgba(255, 255, 255, 0.90) 60%,
+      rgba(255, 255, 255, 0.80) 80%
+    );
+    background:-webkit-linear-gradient(
+      rgba(255, 255, 255, 0.90) 60%,
+      rgba(255, 255, 255, 0.80) 80%
+    );
+    background:-o-linear-gradient(
+      rgba(255, 255, 255, 0.90) 60%,
+      rgba(255, 255, 255, 0.80) 80%
+    );
+    background:-ms-linear-gradient(
+      rgba(255, 255, 255, 0.90) 60%,
+      rgba(255, 255, 255, 0.80) 80%
+    );
+/*    background:-moz-linear-gradient(
       rgba(255, 255, 255, 0.90) 60%,
       rgba(255, 255, 255, 0.60) 90%,
       rgba(255, 255, 255, 0.00) 100%
@@ -198,14 +213,14 @@ html {
       rgba(255, 255, 255, 0.90) 60%,
       rgba(255, 255, 255, 0.60) 90%,
       rgba(255, 255, 255, 0.00) 100%
-    );
+    );*/
   }
 
-  .social {
+/*  .social {
     padding: 1rem;
     text-decoration: none;
     color: white !important;
-  }
+  }*/
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
